@@ -34,10 +34,14 @@
 
 </style>
 <body>
+
 <script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="https://raw.github.com/d3/d3-plugins/master/geo/projection/projection.js"></script>
-<script src="/protovis_dymaxion.js"></script>
-<script src="/d3_dymaxion.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-array@3"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-geo@3"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-geo-projection@4"></script>
+
+<script src="./protovis_dymaxion.js"></script>
+<script src="./d3_dymaxion.js"></script>
 
 <script>
 
@@ -72,14 +76,14 @@ var svg = d3.select("body").append("svg")
 //     .attr("class", "foreground")
 //     .attr("d", path);
 
-d3.json("boundaries.json", function(error, collection) {
+d3.json("./boundaries.json", function(error, collection) {
   svg.insert("path", ".graticule")
       .datum(collection)
       .attr("class", "boundary")
       .attr("d", path);
 });
 
-d3.json("/land.json", function(error, collection) {
+d3.json("./land.json", function(error, collection) {
   svg.insert("path", ".graticule,.boundary")
       .datum(collection)
       .attr("class", "land")
