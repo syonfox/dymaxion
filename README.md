@@ -64,6 +64,12 @@ above you can see the openlayers version, not how the latitude lones connect.
 Im not sure about the details of antarctica it seems there might be a bug in the system or
 many
 
+![img_2.png](img_2.png)
+
+You can see we are missing some things from the original projection althou the math seems 
+to add up properly we are just missing the backround trinagles [ref](https://www.genekeyes.com/WATERMAN-REVIEW/Waterman-review.html)
+
+
 ![img_1.png](img_1.png)
 
 Above is a photo i took to help explain the mercator projection and why there is
